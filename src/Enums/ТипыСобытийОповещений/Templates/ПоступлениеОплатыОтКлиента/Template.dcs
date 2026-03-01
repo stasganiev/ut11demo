@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Данные</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсточникОповещения</dataPath>
+			<field>ИсточникОповещения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник оповещения</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подписчик</dataPath>
+			<field>Подписчик</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписчик</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АналитикаУчетаПоПартнерам</dataPath>
+			<field>АналитикаУчетаПоПартнерам</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика учета по партнерам</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОстатокЗадолженности</dataPath>
+			<field>ОстатокЗадолженности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток задолженности</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектРасчетов</dataPath>
+			<field>ОбъектРасчетов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект расчетов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УдалитьЗаказКлиента</dataPath>
+			<field>УдалитьЗаказКлиента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(не используется) Объект расчетов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ОчередьСобытийДляОповещенийКлиентам.ИсточникОповещения КАК ИсточникОповещения,
+	ОчередьСобытийДляОповещенийКлиентам.Подписчик
+ПОМЕСТИТЬ ДанныеОчереди
+ИЗ
+	РегистрСведений.ОчередьСобытийДляОповещенийКлиентам КАК ОчередьСобытийДляОповещенийКлиентам
+ГДЕ
+	ОчередьСобытийДляОповещенийКлиентам.ВидОповещения = &amp;ВидОповещения
+	И ОчередьСобытийДляОповещенийКлиентам.Период &lt; &amp;ДатаОтработки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДанныеОчереди.ИсточникОповещения КАК ИсточникОповещения,
+	ДанныеОчереди.Подписчик КАК Подписчик,
+	ПриходныйКассовыйОрдерРасшифровкаПлатежа.Партнер КАК Партнер,
+	ПриходныйКассовыйОрдерРасшифровкаПлатежа.Ссылка.Организация КАК Организация,
+	ПриходныйКассовыйОрдерРасшифровкаПлатежа.Ссылка.Контрагент КАК Контрагент,
+	ПриходныйКассовыйОрдерРасшифровкаПлатежа.Сумма КАК Сумма,
+	ПриходныйКассовыйОрдерРасшифровкаПлатежа.Ссылка.Валюта КАК Валюта
+ПОМЕСТИТЬ ПоступлениеОплаты
+ИЗ
+	Документ.ПриходныйКассовыйОрдер.РасшифровкаПлатежа КАК ПриходныйКассовыйОрдерРасшифровкаПлатежа
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ДанныеОчереди КАК ДанныеОчереди
+		ПО (ДанныеОчереди.ИсточникОповещения = ПриходныйКассовыйОрдерРасшифровкаПлатежа.Ссылка)
+			И (ДанныеОчереди.Подписчик = ПриходныйКассовыйОрдерРасшифровкаПлатежа.Партнер)
+			И (ПриходныйКассовыйОрдерРасшифровкаПлатежа.Ссылка.Проведен)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДанныеОчереди.ИсточникОповещения,
+	ДанныеОчереди.Подписчик,
+	ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Партнер,
+	ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Организация,
+	ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Контрагент,
+	ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Сумма,
+	ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Валюта
+ИЗ
+	Документ.ПоступлениеБезналичныхДенежныхСредств.РасшифровкаПлатежа КАК ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ДанныеОчереди КАК ДанныеОчереди
+		ПО (ДанныеОчереди.ИсточникОповещения = ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка)
+			И (ДанныеОчереди.Подписчик = ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Партнер)
+			И (ПоступлениеБезналичныхДенежныхСредствРасшифровкаПлатежа.Ссылка.Проведен)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДанныеОчереди.ИсточникОповещения,
+	ДанныеОчереди.Подписчик,
+	ОперацияПоПлатежнойКартеРасшифровкаПлатежа.Партнер,
+	ОперацияПоПлатежнойКартеРасшифровкаПлатежа.Ссылка.Организация,
+	ОперацияПоПлатежнойКартеРасшифровкаПлатежа.Ссылка.Контрагент,
+	ОперацияПоПлатежнойКартеРасшифровкаПлатежа.Сумма,
+	ОперацияПоПлатежнойКартеРасшифровкаПлатежа.Ссылка.Валюта
+ИЗ
+	Документ.ОперацияПоПлатежнойКарте.РасшифровкаПлатежа КАК ОперацияПоПлатежнойКартеРасшифровкаПлатежа
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ДанныеОчереди КАК ДанныеОчереди
+		ПО (ДанныеОчереди.ИсточникОповещения = ОперацияПоПлатежнойКартеРасшифровкаПлатежа.Ссылка)
+			И (ДанныеОчереди.Подписчик = ОперацияПоПлатежнойКартеРасшифровкаПлатежа.Партнер)
+			И (ОперацияПоПлатежнойКартеРасшифровкаПлатежа.Ссылка.Проведен)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПоступлениеОплаты.ИсточникОповещения КАК ИсточникОповещения,
+	ПоступлениеОплаты.Подписчик КАК Подписчик,
+	ПоступлениеОплаты.Партнер КАК Партнер,
+	ПоступлениеОплаты.Организация КАК Организация,
+	ПоступлениеОплаты.Контрагент КАК Контрагент,
+	ПоступлениеОплаты.Валюта КАК Валюта,
+	СУММА(ПоступлениеОплаты.Сумма) КАК Сумма,
+	СУММА(ЕСТЬNULL(РасчетыСКлиентамиОстатки.СуммаОстаток, 0)) КАК ОстатокЗадолженности
+ИЗ
+	ПоступлениеОплаты КАК ПоступлениеОплаты
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.РасчетыСКлиентами.Остатки(
+				,
+				АналитикаУчетаПоПартнерам.Партнер В
+					(ВЫБРАТЬ
+						ДанныеОчереди.Подписчик
+					ИЗ
+						ДанныеОчереди КАК ДанныеОчереди)) КАК РасчетыСКлиентамиОстатки
+		ПО ПоступлениеОплаты.Валюта = РасчетыСКлиентамиОстатки.Валюта
+			И ПоступлениеОплаты.Партнер = РасчетыСКлиентамиОстатки.АналитикаУчетаПоПартнерам.Партнер}
+
+СГРУППИРОВАТЬ ПО
+	ПоступлениеОплаты.ИсточникОповещения,
+	ПоступлениеОплаты.Подписчик,
+	ПоступлениеОплаты.Партнер,
+	ПоступлениеОплаты.Организация,
+	ПоступлениеОплаты.Контрагент,
+	ПоступлениеОплаты.Валюта</query>
+	</dataSet>
+	<parameter>
+		<name>ВидОповещения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид оповещения</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыОповещенийКлиентам</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаОтработки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата отработки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
