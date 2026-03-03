@@ -4901,6 +4901,7 @@
   <commonModules>CommonModule.ПересортицаТоваровЛокализация</commonModules>
   <commonModules>CommonModule.ПересортицаТоваровУХранителяЛокализация</commonModules>
   <commonModules>CommonModule.ПересчетТоваровЛокализация</commonModules>
+  <commonModules>CommonModule.ПечатьСчетНаОплатуКонструкторКлиент</commonModules>
   <commonModules>CommonModule.ПечатьЭтикетокИСМП</commonModules>
   <commonModules>CommonModule.ПечатьЭтикетокИСМПВызовСервера</commonModules>
   <commonModules>CommonModule.ПечатьЭтикетокИСМПКлиент</commonModules>
@@ -11543,6 +11544,7 @@
   <dataProcessors>DataProcessor.ПечатьПодарочныхСертификатов</dataProcessors>
   <dataProcessors>DataProcessor.ПечатьРазделаБСправкиТТН</dataProcessors>
   <dataProcessors>DataProcessor.ПечатьСтатусовТоваровФСС</dataProcessors>
+  <dataProcessors>DataProcessor.ПечатьСчетНаОплатуКонструктор</dataProcessors>
   <dataProcessors>DataProcessor.ПечатьСчетовНаОплату</dataProcessors>
   <dataProcessors>DataProcessor.ПечатьТоварногоЧека</dataProcessors>
   <dataProcessors>DataProcessor.ПечатьТОРГ16</dataProcessors>
@@ -11960,6 +11962,7 @@
   <informationRegisters>InformationRegister.НастройкиИнтеграцииСПлатежнымиСистемамиУТ</informationRegisters>
   <informationRegisters>InformationRegister.НастройкиКассОФД</informationRegisters>
   <informationRegisters>InformationRegister.НастройкиКомандПечати</informationRegisters>
+  <informationRegisters>InformationRegister.НастройкиКонструктораПечати</informationRegisters>
   <informationRegisters>InformationRegister.НастройкиЛентНовостейПользовательские</informationRegisters>
   <informationRegisters>InformationRegister.НастройкиНовостейОбластиДанных</informationRegisters>
   <informationRegisters>InformationRegister.НастройкиОбменаДаннымиXDTO</informationRegisters>

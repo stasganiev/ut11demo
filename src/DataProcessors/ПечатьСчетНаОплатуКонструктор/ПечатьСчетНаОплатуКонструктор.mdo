@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdcbe6c6-3c3b-5c16-ce77-f8aca9b8722c">
+  <producedTypes>
+    <objectType typeId="83529d70-c83e-07b6-74a8-0a18b483058d" valueTypeId="c3b6b114-6b58-50be-06df-f7a023786530"/>
+    <managerType typeId="5c56a89e-e166-a54d-79d2-0bd5e7dec413" valueTypeId="5ab57fd1-cb04-79fb-0868-c77e498a3ebc"/>
+  </producedTypes>
+  <name>ПечатьСчетНаОплатуКонструктор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать счёта на оплату (конструктор)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПечатьСчетНаОплатуКонструктор.Form.НастройкаБлоков</defaultForm>
+  <forms uuid="bbf3f903-f4d8-6ae7-a0a1-43e3605dca6c">
+    <name>НастройкаБлоков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка блоков</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="24f7a924-0d69-82f0-6e58-e692779ea04c">
+    <name>ПФ_MXL_СчетНаОплатуКонструктор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счёт на оплату (конструктор)</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

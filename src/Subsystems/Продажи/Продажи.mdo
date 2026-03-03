@@ -21,6 +21,9 @@
   <content>DataProcessor.ПечатьОбщихФорм</content>
   <content>DataProcessor.ПечатьМ11</content>
   <content>DataProcessor.ПечатьЗаказовНаТоварыУслуги</content>
+  <content>DataProcessor.ПечатьСчетНаОплатуКонструктор</content>
+  <content>CommonModule.ПечатьСчетНаОплатуКонструкторКлиент</content>
+  <content>InformationRegister.НастройкиКонструктораПечати</content>
   <content>Report.ОценкаРентабельностиПродаж</content>
   <content>Report.АнализЦенПоставщиков</content>
   <content>Report.РезультатыСогласованияЗаявкиНаВозвратТоваровОтКлиента</content>
@@ -71,6 +74,7 @@
   <content>DataProcessor.ЭлектронныеПеревозочныеДокументы</content>
   <content>Role.ПросмотрОтчетаОценкаРентабельностиПродаж</content>
   <content>DataProcessor.УправлениеВыгрузкамиВБидзаар</content>
+  <content>InformationRegister.НастройкиКомандПечати</content>
   <subsystems>АгентскиеЗакупкиПодПринципалов</subsystems>
   <subsystems>ОптовыеПродажи</subsystems>
   <subsystems>КомиссионныеПродажи</subsystems>

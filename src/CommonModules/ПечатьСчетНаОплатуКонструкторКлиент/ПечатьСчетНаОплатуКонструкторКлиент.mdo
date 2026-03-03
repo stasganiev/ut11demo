@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a36630b9-d01a-02b9-34d3-fb88d19b0a91">
+  <name>ПечатьСчетНаОплатуКонструкторКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать счёта на оплату конструктор (клиент)</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>
