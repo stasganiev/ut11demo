@@ -24,6 +24,7 @@
   <content>DataProcessor.ПечатьСчетНаОплатуКонструктор</content>
   <content>CommonModule.ПечатьСчетНаОплатуКонструкторКлиент</content>
   <content>InformationRegister.НастройкиКонструктораПечати</content>
+  <content>Role.ИспользованиеКонструктораПечатиСчета</content>
   <content>Report.ОценкаРентабельностиПродаж</content>
   <content>Report.АнализЦенПоставщиков</content>
   <content>Report.РезультатыСогласованияЗаявкиНаВозвратТоваровОтКлиента</content>

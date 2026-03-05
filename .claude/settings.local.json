@@ -10,7 +10,8 @@
       "Bash(while read f)",
       "Bash(do wc -l \"$f\")",
       "Bash(python3 -c \"import uuid; [print\\(uuid.uuid4\\(\\)\\) for _ in range\\(40\\)]\")",
-      "Bash(xargs grep -l \"ПолучитьДанныеДляПечатнойФормыСчетаНаОплату\")"
+      "Bash(xargs grep -l \"ПолучитьДанныеДляПечатнойФормыСчетаНаОплату\")",
+      "Bash(python3 -c \"import uuid; print\\(uuid.uuid4\\(\\)\\)\")"
     ]
   }
 }

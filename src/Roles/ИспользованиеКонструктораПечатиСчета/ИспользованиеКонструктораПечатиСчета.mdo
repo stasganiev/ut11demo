@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64c2e857-a6b9-42dd-89b1-ed87529f5afa">
+  <name>ИспользованиеКонструктораПечатиСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование конструктора печати счёта на оплату</value>
+  </synonym>
+</mdclass:Role>
