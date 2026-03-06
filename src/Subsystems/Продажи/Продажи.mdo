@@ -18,6 +18,9 @@
   <content>CommonCommand.ДополнительныеОбработкиПродажи</content>
   <content>CommonCommand.ДополнительныеОтчетыПродажи</content>
   <content>CommonCommand.ПанельОтчетовПродажи</content>
+  <content>DataProcessor.ПечатьСчетНаОплатуКонструктор</content>
+  <content>CommonModule.ПечатьСчетНаОплатуКонструкторКлиент</content>
+  <content>InformationRegister.НастройкиКонструктораПечати</content>
   <content>DataProcessor.ПечатьОбщихФорм</content>
   <content>DataProcessor.ПечатьМ11</content>
   <content>DataProcessor.ПечатьЗаказовНаТоварыУслуги</content>

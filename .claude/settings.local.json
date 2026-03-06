@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -d /d/bases/gr_edt/erpws/УТ_11_демо/src/DataProcessors/*)",
+      "Bash(ls -d /d/bases/gr_edt/erpws/УТ_11_демо/src/CommonModules/*)",
+      "Bash(ls -d /d/bases/gr_edt/erpws/УТ_11_демо/src/InformationRegisters/*)",
+      "Bash(xargs ls)",
+      "Bash(grep -l \"clientManagedApplication\\\\|clientOrdinaryApplication\" \"d:/bases/gr_edt/erpws/УТ_11_демо/src/CommonModules\"/*/*.mdo)",
+      "Bash(mkdir -p \"d:/bases/gr_edt/erpws/УТ_11_демо/src/DataProcessors/ПечатьСчетНаОплатуКонструктор/Forms/НастройкаБлоков\")",
+      "Bash(mkdir -p \"d:/bases/gr_edt/erpws/УТ_11_демо/src/DataProcessors/ПечатьСчетНаОплатуКонструктор/Templates/ПФ_MXL_СчетНаОплатуКонструктор\")",
+      "Bash(mkdir -p \"d:/bases/gr_edt/erpws/УТ_11_демо/src/CommonModules/ПечатьСчетНаОплатуКонструкторКлиент\")",
+      "Bash(mkdir -p \"d:/bases/gr_edt/erpws/УТ_11_демо/src/InformationRegisters/НастройкиКонструктораПечати\")"
+    ]
+  }
+}
